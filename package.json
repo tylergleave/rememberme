@@ -12,8 +12,6 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@skeletonlabs/skeleton": "^2.5.1",
-		"@skeletonlabs/tw-plugin": "^0.2.4",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.27.4",
 		"@types/node": "^20.10.2",
@@ -23,6 +21,8 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-svelte": "^2.30.0",
+		"flowbite": "^2.2.0",
+		"flowbite-svelte": "^0.44.20",
 		"postcss": "^8.4.24",
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^3.0.0",

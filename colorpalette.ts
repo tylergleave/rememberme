@@ -1,6 +1,4 @@
 
-import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
-
 export const rememberMeTheme: CustomThemeConfig = {
     name: 'rememberMeTheme',
     properties: {
