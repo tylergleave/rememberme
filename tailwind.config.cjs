@@ -27,7 +27,11 @@ const config = {
 			900: '#37455e'
 		  }
 		}
-	  }
+	  },
+	  container: {
+		center: true,
+		padding: '1rem',
+	  },
 	}
   };
   
