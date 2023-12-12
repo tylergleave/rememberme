@@ -11,7 +11,7 @@
     <NavHamburger  />
     <NavUl >
       <NavLi href="/">Home</NavLi>
-      <NavLi href="/about">About</NavLi>
+      <NavLi href="/how-it-works">How it Works</NavLi>
       <NavLi href="/pricing">Pricing</NavLi>
       <NavLi href="/contact">Contact</NavLi>
     </NavUl>

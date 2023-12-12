@@ -7,11 +7,24 @@
 	<meta name="description" content="RememberMeObituaries.com offers professionally written, personal, and impactful obituaries and eulogies." />
 </svelte:head>
 
-<div class="text-center mt-12 container">
-    <span class="text-4xl">
+<style>
+    .hero{
+        background: url("/images/rose-bg.jpg");
+        min-height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+<div class="text-center flex hero relative">
+    <span class="text-4xl m-auto text-white drop-shadow-xl z-10">
         Losing a loved one is challenging. <br />
         Let us write the obituary and eulogy.
     </span>
+    <div class="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-30"></div>
+</div>
+<div class="text-center">
+    <a href="/get-started" class="bg-primary-500 text-white py-6 px-12 rounded text-lg">Get Started</a>
 </div>
 <div class="mt-12 container">
     <span class="text-2xl">Simple</span>
@@ -36,7 +49,4 @@
         <li>Edit your personalized document to fit your needs</li>
         <li>Email, print, or share a copy of your document for easy distribution</li>
     </ul>
-</div>
-<div class="text-center mt-6">
-    <a href="/get-started" class="bg-primary-500 text-white py-5 px-10 rounded">Get Started</a>
 </div>
