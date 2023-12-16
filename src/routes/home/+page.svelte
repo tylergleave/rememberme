@@ -23,7 +23,7 @@
 				</p>
 			</div>
 			<div class="col-span-12 sm:col-span-2 text-right my-auto">
-				<button class="bg-primary-500 hover:bg-primary-900 px-4 py-2 text-white rounded-md w-full">Resume</button>
+				<button class="bg-primary-500 border border-primary-900 hover:bg-primary-900 px-4 py-2 text-white rounded-md w-full">Resume</button>
 			</div>
 		</div>
 		<div class="mt-8 grid grid-cols-12 gap-4 px-6 py-6 rounded-md bg-white border border-primary-900">
@@ -35,7 +35,7 @@
 				</p>
 			</div>
 			<div class="col-span-12 sm:col-span-2 text-right my-auto">
-				<button class="bg-primary-500 hover:bg-primary-900 px-4 py-2 text-white rounded-md w-full">Wait</button>
+				<button class="bg-gray-400 border border-primary-900 py-2 text-white rounded-md w-full">Wait</button>
 			</div>
 		</div>
 		<div class="mt-8 grid grid-cols-12 gap-4 px-6 py-6 rounded-md bg-white border border-primary-900">
@@ -47,7 +47,7 @@
 				</p>
 			</div>
 			<div class="col-span-12 sm:col-span-2 text-right my-auto">
-				<button class="bg-primary-500 hover:bg-primary-900 px-4 py-2 text-white rounded-md w-full">View</button>
+				<button class="bg-primary-500 border border-primary-900 hover:bg-primary-900 px-4 py-2 text-white rounded-md w-full">View</button>
 			</div>
 		</div>
 	</div>

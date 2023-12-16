@@ -40,7 +40,7 @@
 					<input type="password" name="password_conf" id="password_conf" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6">
 				</div>
 			</div>
-			<div class="col-span-12 mt-8 text-center">
+			<div class="col-span-12 mt-8 text-right">
 				<button type="submit" class="bg-primary-500 rounded-md text-white py-4 px-8 hover:bg-primary-900">Next Step</button>
 			</div>
 		</div>
