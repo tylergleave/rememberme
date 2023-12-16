@@ -24,7 +24,7 @@
     <div class="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-30"></div>
 </div>
 <div class="text-center relative">
-    <a href="/get-started" class="bg-primary-500 text-white py-6 px-12 rounded text-lg hover:shadow-xl">Get Started</a>
+    <a href="/get-started" class="bg-primary-500 text-white py-6 px-12 rounded text-lg hover:bg-primary-900">Get Started</a>
 </div>
 <div class="mt-12 container">
     <span class="text-2xl">Simple</span>
