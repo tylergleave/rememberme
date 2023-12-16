@@ -6,6 +6,14 @@ const config = {
 	darkMode: 'class',
   
 	theme: {
+	  listStyleType: {
+		none: 'none',
+		disc: 'disc',
+		decimal: 'decimal',
+		square: 'square',
+		circle: 'circle',
+
+	  },
 	  extend: {
 		colors: {
 		  // flowbite-svelte
