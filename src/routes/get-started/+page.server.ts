@@ -75,6 +75,6 @@ export const actions: Actions = {
 		}
 		// redirect to
 		// make sure you don't throw inside a try/catch block!
-		throw redirect(302, "/more-info");
+		throw redirect(302, "/basic-info");
 	}
 };
