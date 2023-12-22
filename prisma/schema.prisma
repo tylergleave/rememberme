@@ -13,53 +13,70 @@ datasource db {
 }
 
 model User {
-  id           String    @id @unique
-  created      DateTime  @default(now())
-  updated      DateTime  @default(now())
-  name         String
-  email        String
-  role         String     @default("Standard")
-  is_banned    Boolean    @default(false)
-  auth_session Session[]
-  key          Key[]
-  prompts      Prompt[]
+  id                  String    @id @unique
+  created             DateTime  @default(now())
+  updated             DateTime  @default(now())
+  name                String
+  email               String
+  role                String     @default("Standard")
+  is_banned           Boolean    @default(false)
+  auth_session        Session[]
+  key                 Key[]
+  obituaries          Obituary[]
 }
 
 model Session {
-  id             String @id @unique
-  user_id        String
-  active_expires BigInt
-  idle_expires   BigInt
-  user           User   @relation(references: [id], fields: [user_id], onDelete: Cascade)
+  id                  String @id @unique
+  user_id             String
+  active_expires      BigInt
+  idle_expires        BigInt
+  user                User   @relation(references: [id], fields: [user_id], onDelete: Cascade)
 
   @@index([user_id])
 }
 
 model Key {
-  id              String  @id @unique
-  hashed_password String?
-  user_id         String
-  user            User    @relation(references: [id], fields: [user_id], onDelete: Cascade)
+  id                  String  @id @unique
+  hashed_password     String?
+  user_id             String
+  user                User    @relation(references: [id], fields: [user_id], onDelete: Cascade)
 
   @@index([user_id])
 }
 
-model Prompt {
-  id                  String      @id @default(uuid())
-  user_id             String    
-  name                String    
-  dob                 String?   
-  description         String?     
-  createdAt           DateTime    @default(now())
-  updatedAt           DateTime    @default(now())
-  user                User        @relation(fields: [user_id], references: [id])
-  responses           Response[]
+model Obituary {
+  id                  String      @id @unique
+  user_id             String       
+  fullName            String
+  nicknames           String?
+  birthDate           DateTime
+  deathDate           DateTime
+  marriageDate        DateTime?
+  family              String?
+  careers             String?
+  achievements        String?
+  personality         String?
+  interests           String?
+  stories             String?
+  impact              String?
+  legacy              String?
+  funeralDetails      String?
+  memorialServices    String?
+  charitySupport      String?
+
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  user                User      @relation(references: [id], fields: [user_id], onDelete: Cascade)
+
+
+  response            Response[]
 }
 
 model Response {
   id                String      @id @default(uuid())
-  prompt_id         String
+  obituary_id       String
   // Todo api response shit
-
-  prompt              Prompt        @relation(fields: [prompt_id], references: [id])
+  
+  obituary            Obituary  @relation(fields: [obituary_id], references: [id])
 }
